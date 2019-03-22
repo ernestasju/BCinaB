@@ -46,7 +46,7 @@ function Start-BCinaB {
     if (-not (Test-Path -Path "c:\programdata\bcinab" -PathType Container)) {
         Write-Host "I will create folder c:\programdata\bcinab and store data there. Please leave that folder in place while you use BCinaB."
         New-Item -Path "c:\programdata\bcinab" -ItemType Directory
-        DownloadCurrentCompose
+        #DownloadCurrentCompose
     }
     
     if (-not (Test-Path -Path "c:\programdata\bcinab\licenses" -PathType Container)) {

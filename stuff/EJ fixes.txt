@@ -1,0 +1,9 @@
+Correct image names in compose files: iceju/bcinab-api and iceju/bcinab-gui respectively.
+
+In C:\ProgramData\bcinab:
+Up service using: docker-compose -p bcinab -f .\docker-compose.yml -f .\docker-compose.navcontainerhelper.yml up
+Down service using: docker-compose -p bcinab -f .\docker-compose.yml -f .\docker-compose.navcontainerhelper.yml down --remove-orphans
+
+Service expects these folders to exist:
+
+C:\Program Data\bcinab with compose files and subfolder licenses with licence files.
